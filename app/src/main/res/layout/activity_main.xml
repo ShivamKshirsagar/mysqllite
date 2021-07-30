@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="16dp"
+    tools:context="MainActivity">
+
+    <EditText
+        android:id="@+id/editText_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:hint="Id"
+        android:inputType="number"
+        android:textColor="#fff"
+        android:textColorHint="#EAF0F1" />
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_id"
+        android:hint="Name"
+        android:textColor="#fff"
+        android:textColorHint="#EAF0F1" />
+
+    <EditText
+        android:id="@+id/editText_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_name"
+        android:hint="Email"
+        android:textColor="#fff"
+        android:textColorHint="#EAF0F1" />
+
+    <EditText
+        android:id="@+id/editText_CC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_email"
+        android:layout_marginBottom="20dp"
+        android:hint="Course Count"
+        android:inputType="number"
+        android:textColor="#fff"
+        android:textColorHint="#EAF0F1" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_CC"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="2dp"
+        android:background="#8BC34A"
+        android:text="Add Data"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/button_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_add"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:background="#10A881"
+        android:text="View"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_viewAll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:background="#F3B431"
+        android:text="Update"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_update"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:background="#E44236"
+        android:text="Delete"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/button_viewAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:background="#E74292"
+        android:text="View All"
+        android:textColor="#fff" />
+</RelativeLayout>
